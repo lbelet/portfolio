@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* High z-index to keep the header above other content */
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  body {
+    padding-top: 60px; /* Adjust based on the actual height of your header to avoid content being hidden behind the fixed header */
+  }
+
+/* Change Navbar brand and link colors to black */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: black !important; /* Utilisation de !important pour s'assurer que cela prend le dessus sur les styles par défaut de Bootstrap */
+}
+
+/* Change the navbar-toggler icon color */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Additional styling to ensure visibility against light backgrounds */
+.navbar-light {
+  background-color: #fff; /* Example: setting a white background for better contrast */
+}
+
+  
