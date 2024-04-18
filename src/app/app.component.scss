@@ -9,3 +9,18 @@
     align-items: center;
     height: 100vh; /* Full viewport height */
   }
+
+  /* Assurez-vous que le HTML et BODY occupent toute la hauteur de la fenêtre */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Cache le défilement horizontal si l'image est plus large que l'écran */
+}
+
+/* Ajoutez l'image en arrière-plan sur tout le corps de la page */
+body {
+  background: url('/assets/images/background.webp') no-repeat center center fixed;
+  background-size: cover; /* S'assure que l'image couvre toute la page sans déformation */
+}
+
