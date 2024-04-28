@@ -20,7 +20,18 @@ html, body {
 
 /* Ajoutez l'image en arrière-plan sur tout le corps de la page */
 body {
-  background: url('/assets/images/background.webp') no-repeat center center fixed;
-  background-size: cover; /* S'assure que l'image couvre toute la page sans déformation */
+  // background: url('/assets/images/background.webp') no-repeat center center fixed;
+  // background-size: cover; /* S'assure que l'image couvre toute la page sans déformation */
+  // transition: background-size 0.5s ease !important; /* Animation du zoom */
+}
+
+.door-interaction {
+  position: absolute;
+  width: 100%; /* Ajustez si nécessaire */
+  height: 100%; /* Ajustez si nécessaire */
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 10; /* Sous le header mais au-dessus de tout le reste */
 }
 
